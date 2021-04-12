@@ -105,6 +105,12 @@ function newSuperalgosDocsFooter() {
         } 
         HTML = HTML + '"></a>'
 
+        HTML = HTML + '<a href="#" onClick="UI.projects.superalgos.spaces.docsSpace.changeLanguage(\'TR\')"><img src="Images/Languages/TR.png" title="Turkish" class="docs-footer-language'
+        if (languageCode === 'TR') { 
+            HTML = HTML + '-selected'
+        } 
+        HTML = HTML + '"></a>'
+
         HTML = HTML + '</div>'
 
         HTML = HTML + '<div class="docs-footer-cell">'
@@ -141,6 +147,7 @@ function newSuperalgosDocsFooter() {
         HTML = HTML + '<ul>'
         HTML = HTML + '<li><a href="#" onClick="UI.projects.superalgos.spaces.docsSpace.changeCurrentBranch(\'master\')">Master</a></li>'
         HTML = HTML + '<li><a href="#" onClick="UI.projects.superalgos.spaces.docsSpace.changeCurrentBranch(\'develop\')">Develop</a></li>'
+        HTML = HTML + '<li><a href="#" onClick="UI.projects.superalgos.spaces.docsSpace.changeCurrentBranch(\'plugins-docs\')">Plugins/Docs</a></li>'
         HTML = HTML + '</ul>'
         HTML = HTML + '</div>'
 
@@ -150,6 +157,7 @@ function newSuperalgosDocsFooter() {
         HTML = HTML + '<ul>'
         HTML = HTML + '<li><a href="#" onClick="UI.projects.superalgos.spaces.docsSpace.changeContributionsBranch(\'master\')">Master</code></li>'
         HTML = HTML + '<li><a href="#" onClick="UI.projects.superalgos.spaces.docsSpace.changeContributionsBranch(\'develop\')">Develop</a></li>'
+        HTML = HTML + '<li><a href="#" onClick="UI.projects.superalgos.spaces.docsSpace.changeContributionsBranch(\'plugins-docs\')">Plugins/Docs</a></li>'
         HTML = HTML + '</ul>'
         HTML = HTML + '</ul>'
         HTML = HTML + '</div>'
